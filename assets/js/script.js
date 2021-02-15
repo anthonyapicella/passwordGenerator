@@ -27,9 +27,21 @@ var passwordLength = prompt("How many characters would you like your password to
 if (passwordLength < 8 || passwordLength > 24) {
   passwordLength = prompt("You must select a number between 8 and 24 characters");
 
-} 
+}
 
-// console.log(logicArr);
+// ask user if they would like the password to contain numbers, then push numbers to logicArr array
+
+var numberChoice = confirm("Would you like your password contain numbers?");
+
+if (numberChoice) {
+  for (var i = 0; i < numbersArr.length; i++) {
+    logicArr.push(numbersArr[i])
+  }
+}
+
+
+
+console.log(logicArr);
 
 
 alert.passwordLength;
