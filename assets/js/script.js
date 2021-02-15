@@ -29,7 +29,7 @@ if (passwordLength < 8 || passwordLength > 24) {
 
 }
 
-// ask user if they would like the password to contain numbers, then push numbers to logicArr array
+// ask user if they would like the password to contain numbers, if true push numbers to logicArr array
 
 var numberChoice = confirm("Would you like your password contain numbers?");
 
@@ -39,9 +39,23 @@ if (numberChoice) {
   }
 }
 
+// ask user if they would like password to contain numbers, if true push to array
+
+var lowerChoice = confirm("Should your password contain lowercase letters?");
+
+if (lowerChoice) {
+  for (var i = 0; i < lowCaseArr.length; i++) {
+    logicArr.push(lowCaseArr[i])
+  }
+}
+
+
+
+
 
 
 console.log(logicArr);
+console.log(passwordLength);
 
 
 alert.passwordLength;
