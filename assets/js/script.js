@@ -17,7 +17,7 @@ var logicArr = [];
 var finalArr = [];
 
 
-// Create a function that when invoked by button press) executes our code prompting the user for their choices
+// Create a function that when invoked by button press, executes our code prompting the user for their choices
 
 function generatePassword() {
   // ask user desired length of password
