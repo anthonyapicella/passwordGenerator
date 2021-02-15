@@ -49,6 +49,29 @@ if (lowerChoice) {
   }
 }
 
+// ask user to confirm UPPER CASE letters, if true push to array
+
+var upperChoice = confirm("Will your password contain UPPERCASE letters?");
+
+if (upperChoice) {
+  for (var i = 0; i < uppCaseArr.length; i++) {
+    logicArr.push(uppCaseArr[i])
+  }
+}
+
+// ask user to confirm special characters, if true push to array
+
+var specialChoice = confirm ("And how about some special characters??");
+
+if (specialChoice) {
+  for (var i = 0; i < specialArr.length; i++) {
+    logicArr.push(specialArr[i])
+  }
+}
+
+/*we need to write a for loop that will iterate through logicArr 
+and then use Math.random to push character strings to final array based 
+on limit set by user in passwordLength using .length*/
 
 
 
