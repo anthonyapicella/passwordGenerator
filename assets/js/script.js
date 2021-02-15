@@ -73,12 +73,15 @@ if (specialChoice) {
 and then use Math.random to push character strings to final array based 
 on limit set by user in passwordLength using .length*/
 
-
+for (var i = 0; i < passwordLength; i++) {
+  finalArr.push(logicArr[Math.floor(Math.random() * logicArr.length)]);
+}
 
 
 
 console.log(logicArr);
 console.log(passwordLength);
+console.log(finalArr);
 
 
 alert.passwordLength;
@@ -88,7 +91,7 @@ alert.passwordLength;
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
+  
   passwordText.value = password;
 
 }
