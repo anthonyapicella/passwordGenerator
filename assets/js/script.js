@@ -2,34 +2,35 @@
 var generateBtn = document.querySelector("#generate");
 
 // Available characters for password
-var numbers = "1234567890".split("");
-var lowcase = "abcdefghijklmnopqrstuvwxyz".split("");
-var uppcase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-var speChar = " !#$%&'()*+,-./:;<=>?@[]^_`{|}~".split("");
+
+var numbersArr = ["1","2","3","4","5","6","7","8","9","0"];
+var lowCaseArr = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+var uppCaseArr = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+var specialArr = ["!","#","$","%","&","(",")","*","+","-",".","/",":",";","<","=",">","?","@","[","]","^","_","{","|","}"];
+
 var logicArr = [];
 var finalArr = [];
 
-// User interaction 
 
-var passNums = confirm("Would you like your password contain numbers?");
-var passLower = confirm("Should your password contain lowercase letters?");
-var passUpper = confirm("Will your password contain UPPERCASE letters?");
-var passSpec = confirm("And how about some special characters??");
+
+function generatePassword() {
+
+}
+
+
+// ask user desired length of password
+
 var passwordLength = prompt("How many characters would you like your password to contain?");
- 
-// create conditional to pass response to logicArr
 
-var num = [Math.floor(Math.random()*numbers.length)];
+// ensure user selects a number between 8 and 24 then store that value in password length
 
+if (passwordLength < 8 || passwordLength > 24) {
+  passwordLength = prompt("You must select a number between 8 and 24 characters");
 
+} 
 
-console.log(num)
-console.log(passNums);
-// console.log(passLower);
-// console.log(passUpper);
-// console.log(passSpec);
-// console.log(passwordLength);
-// console.log(num);
+// console.log(logicArr);
+
 
 alert.passwordLength;
 
